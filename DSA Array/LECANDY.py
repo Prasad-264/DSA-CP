@@ -25,13 +25,3 @@ Yes
 No'''
 
 
-'''Input:
-2
-2 3
-1 1
-3 7
-4 2 2
-
-Output:
-Yes
-No'''
