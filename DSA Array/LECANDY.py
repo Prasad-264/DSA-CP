@@ -11,4 +11,17 @@ for i in range(int(input())):
         print("Yes")
     else:
         print("No")
+        
+        
+'''Input:
+2
+2 3
+1 1
+3 7
+4 2 2
+
+Output:
+Yes
+No'''
+
 
