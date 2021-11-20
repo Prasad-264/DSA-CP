@@ -25,4 +25,5 @@ int main(void)
 		? cout << "Element is not present in array"
 		: cout << "Element is present at index : " << result;
 	return 0;
+	
 }

@@ -2,9 +2,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// A iterative binary search function. It returns
-// location of x in given array arr[l..r] if present,
-// otherwise -1
+// A iterative binary search function. It returns location of x in given array arr[l..r] if present, otherwise -1
 int binarySearch(int arr[], int l, int r, int x)
 {
 	while (l <= r) {

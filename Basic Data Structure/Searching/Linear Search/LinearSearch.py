@@ -11,7 +11,7 @@ def search(arr, n, x):
 
 # Driver Code
 arr = [2, 3, 4, 56, 54, 10, 40]
-x = 1
+x = 10
 n = len(arr)
 
 # Function call
