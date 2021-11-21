@@ -1,7 +1,6 @@
 # Python program to for tree traversals
 
-# A class that represents an individual node in a
-# Binary Tree
+# A class that represents an individual node in a Binary Tree
 
 
 class Node:
