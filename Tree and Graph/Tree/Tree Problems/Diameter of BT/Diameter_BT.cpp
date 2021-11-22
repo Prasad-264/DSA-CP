@@ -1,4 +1,4 @@
-// Count Height of binary tree Problem in c++
+// Count Diameter of binary tree Problem in c++
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -60,5 +60,5 @@ int main() {
     return 0;
 }
 
-// TO is O(n)
+// TC is O(n)
 //https://youtu.be/9fj_-Sr84CU?list=PLfqMhTWNBTe0b2nM6JHVCnAkhQRGiZMSJ

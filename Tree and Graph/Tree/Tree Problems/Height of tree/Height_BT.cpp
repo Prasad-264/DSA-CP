@@ -55,4 +55,5 @@ int main() {
     return 0;
 }
 
-//
+// TC is O(n)
+//https://youtu.be/9fj_-Sr84CU?list=PLfqMhTWNBTe0b2nM6JHVCnAkhQRGiZMSJ

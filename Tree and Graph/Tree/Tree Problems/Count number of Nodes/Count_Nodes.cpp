@@ -50,4 +50,5 @@ int main() {
     return 0;
 }
 
+// TC is O(n)
 //https://youtu.be/IHfZaRZFg7s?list=PLfqMhTWNBTe0b2nM6JHVCnAkhQRGiZMSJ
