@@ -1,4 +1,4 @@
-// return duplicate element... if n = 5 ->{1, 2, 3, 4, 3} so return 3. and n always present bwt 1 to n-1.
+   // return duplicate element... if n = 5 ->{1, 2, 3, 4, 3} so return 3. and n always present bwt 1 to n-1.
 
 #include<bits/stdc++.h>
 using namespace std;
