@@ -5,7 +5,7 @@ using namespace std;
 int uniqueEle(int arr[], int n) {
     int ans = 0;
     for(int i=0; i<n; i++) {
-        ans = ans^arr[i];
+        ans = ans^arr[i];     // 3^3=0 or a^a=0 or a^0=a
     }
     return ans;
 }
@@ -25,3 +25,5 @@ int main() {
     
     return 0;
 }
+
+//Codestudio
