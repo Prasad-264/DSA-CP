@@ -38,6 +38,18 @@ int heightBT(Node* root) {
 }
 
 
+// class Solution {
+// public:
+//     int maxDepth(Node* root) {
+//         if(root == NULL) return 0; 
+        
+//         int lh = maxDepth(root->left); 
+//         int rh = maxDepth(root->right); 
+        
+//         return 1 + max(lh, rh); 
+//     }
+// };
+
 
 int main() {
     Node* root = new Node(1);
@@ -57,3 +69,6 @@ int main() {
 
 // TC is O(n)
 //https://youtu.be/9fj_-Sr84CU?list=PLfqMhTWNBTe0b2nM6JHVCnAkhQRGiZMSJ
+
+
+
