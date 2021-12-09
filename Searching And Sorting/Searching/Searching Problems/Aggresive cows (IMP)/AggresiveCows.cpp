@@ -1,3 +1,5 @@
+//C++ Aggressive cows implementation
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -40,3 +42,5 @@ int main() {
     }
     return 0;
 } 
+
+// TC is O(N log N)
