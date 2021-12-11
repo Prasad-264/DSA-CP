@@ -1,3 +1,4 @@
+// Selection sort in C++
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -27,7 +28,9 @@ int main() {
         int arr[n];
         for(int i=0; i<n; i++) cin >> arr[i];
         selectionSort(arr, n);
-    }
-    
+    } 
     return 0;
 }
+
+// TC is O(N*N)
+// Best case and Worst case time complexity is O(N*N)
