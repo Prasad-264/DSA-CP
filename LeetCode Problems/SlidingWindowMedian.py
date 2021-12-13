@@ -17,13 +17,14 @@ Window position                Median
 
 from sortedcontainers import SortedList
 
-def medianSlidingWindow(self, nums, k):
-    sl = SortedList(nums[:k - 1])
-    wd = []
+class solution:
+    def medianSlidingWindow(self, nums, k):
+        sl = SortedList(nums[:k - 1])
+        wd = []
 
-    for i in range(k - 1, len(nums)):
-        sl.add(nums[i])
-        wd.append((sl[(k - 1) // 2] + sl[k // 2]) / 2)
-        sl.remove(nums[i - k + 1])
-    return wd
+        for i in range(k - 1, len(nums)):
+            sl.add(nums[i])
+            wd.append((sl[(k - 1) // 2] + sl[k // 2]) / 2)
+            sl.remove(nums[i - k + 1])
+        return wd
 
