@@ -2,7 +2,7 @@
 #include <bits/stdc++.h>
 using namespace std;
  
-/* Function to reverse arr[] from start to end*/
+//  Function to reverse arr[] from start to end
 void rvereseArray(int arr[], int start, int end)
 {
     while (start < end)

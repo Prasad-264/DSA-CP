@@ -25,14 +25,14 @@ int search(int inorder[], int start, int end, int curr){
 
 Node* buildTree(int preorder[], int inorder[], int start, int end) {
     static int idx = 0;
-    if(start > end){
+    if(start > end) {
         return NULL;
     }
 
     int curr = preorder[idx];
     idx++;
     Node* node = new Node(curr);
-    if(start == end){
+    if(start == end) {
         return node;
     }
     int pos = search(inorder, start, end, curr);
