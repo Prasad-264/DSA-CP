@@ -1,19 +1,30 @@
 // Iterative C++ program to reverse an array
 #include <bits/stdc++.h>
 using namespace std;
+/* C++ Code to reverse the given array 
+    arr[] = {1, 2, 3, 4, 5}
+             ^           ^
+           start        end
+    output = {5, 4, 3, 2, 1}
+*/
  
-//  Function to reverse arr[] from start to end
-void rvereseArray(int arr[], int start, int end)
-{
-    while (start < end)
-    {
-        int temp = arr[start];
-        arr[start] = arr[end];
-        arr[end] = temp;
+// Iterative function to reverse the arr[] 
+void reverseArray(int arr[], int start, int end) {
+    while (start < end) {
+        swap(arr[start], arr[end]);
         start++;
         end--;
     }
-}    
+} 
+
+// Recursive function to reverse the arr[]
+void reverseArray1(int arr[], int start, int end) {
+    if (start >= end) return;
+    swap(arr[start], arr[end]);  
+    // Recursive Function call
+    reverseArray1(arr, start + 1, end - 1);
+}
+// Time Complexity of both function is O(N)   
  
 /* Utility function to print an array */
 void printArray(int arr[], int size)
@@ -35,7 +46,7 @@ int main()
     printArray(arr, n);
      
     // Function calling
-    rvereseArray(arr, 0, n-1);
+    reverseArray(arr, 0, n-1);
      
     cout << "Reversed array is" << endl;
      

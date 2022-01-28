@@ -2,28 +2,28 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// A iterative binary search function. It returns location of x in given array arr[l..r] if present, otherwise -1
-int binarySearch(int arr[], int start, int end, int key)
-{
+//  C++ Code for finding element x in given array :)
+int binarySearch(int arr[], int start, int end, int x) {
 	while (start <= end) {
-		int mid = start + (end - start) / 2;
+		// Find middle element of the array by dividing 2
+		int mid = (start + end) >> 1;
 
 		// Check if x is present at mid
-		if (arr[mid] == key)
+		if (arr[mid] == x)
 			return mid;
 
-		// If x greater, ignore left half
-		if (arr[mid] < key)
+		// If x greater check in right side
+		if (arr[mid] < x)
 			start = mid + 1;
 
-		// If x is smaller, ignore right half
+		// If x is smaller check in left side
 		else
 			end = mid - 1;
 	}
-
 	// if we reach here, then element was not present
 	return -1;
 }
+// Time Complexity is O(log N) 
 
 int main(void)
 {
