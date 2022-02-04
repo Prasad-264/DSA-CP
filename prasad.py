@@ -5,7 +5,7 @@ output = 9
 '''
 def minInArray(arr):
     #python has inbuilt max() function
-    return max(arr)
+    return min(arr)
 
 # given array
 arr = [12, 25, 9, 76, 29, 16]
