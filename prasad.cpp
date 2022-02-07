@@ -1,23 +1,31 @@
 #include<bits/stdc++.h>
 using namespace std;
+// ***** Kadanes Algorithm ******
 
-/* C++ Function to return a minimum element in Array
-   size of arr, n = 6 
-   arr[] = {10, 20, 30, 70, 50, 40}
-   output = 10
+/* C++ Function to return a Largest Sum Contiguous Subarray
+   size of arr, n = 8
+   arr[] = {-2, -3, 4, -1, -2, 1, 5, -3}
+   output = 7 bcoz sum of {4 + (-1) + (-2) + 1 + 5} = 7;
 */
-int minInArray(int arr[], int n) { 
-    // initial max is 10
-    int min = arr[0];
-    // Traverse array elements
-    // from second and compare
-    // every element with current min
-    for(int i=1; i<n; i++) {
-        if(arr[i] < min)
-            min = arr[i];
+int maxSubarraySum(int arr[], int n) { 
+    // initial sum is 0
+    int sum = 0;
+    // initial maximum is negetive number
+    int maxi = INT_MIN; 
+    for(int i=0; i<n; i++) {
+
+        // Adding array elements
+        sum += arr[i];
+
+        // update maxi with maximum of sum and maxi
+        maxi = max(sum, maxi);
+
+        // if the sum is less than 0, update sum to 0 
+        if(sum < 0) sum = 0;
     }
-    return min;
+    return maxi;
 }
+
 // Using C++ STL
 int mini  = *min_element(arr, arr + n);
 //                        ^      ^    
