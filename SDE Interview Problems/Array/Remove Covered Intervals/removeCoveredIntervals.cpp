@@ -24,6 +24,8 @@ Output: 1
 
 class Solution {
 public:
+
+/*
     static bool comp(vector<int>& a, vector<int>& b) {
         if (a[0] != b[0]) {
             return a[0] < b[0];
@@ -46,17 +48,34 @@ public:
                 ++res;
                 right = v[1];
             }
-            /*
-            ignore these cases:
-            1. v[0]==left && v[1]<=right:
-            these intervals are covered by last interval
-            2. v[0]>left && v[1]<=right:
-            these intervals are covered by last interval
-            */
+            
+            // ignore these cases:
+            // 1. v[0]==left && v[1]<=right:
+            // these intervals are covered by last interval
+            // 2. v[0]>left && v[1]<=right:
+            // these intervals are covered by last interval
+            
         }
         
         return res;
     }
+*/
+
+
+    int removeCoveredIntervals(vector<vector<int>>& A) {
+        int res = 0, left = -1, right = -1;
+        sort(A.begin(), A.end());
+        for (auto& v: A) {
+            if (v[0] > left && v[1] > right) {
+                left = v[0];
+                ++res;
+            }
+            right = max(right, v[1]);
+        }
+        return res;
+    }
+
 };
+
 
 // TC : O(N log N)
