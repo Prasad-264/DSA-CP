@@ -23,9 +23,9 @@ class Solution {
 public:
 	bool commonSubseq (string a, string b) {
 	    vector<bool> hash(26, 0);
-	    for(auto it : a) hash[it - 'A'] = true;
-	    for(auto it : b) {
-	        if(hash[it - 'A']) 
+	    for(auto ita : a) hash[ita - 'A'] = true;
+	    for(auto itb : b) {
+	        if(hash[itb - 'A']) 
 	            return true;
 	    }
 	    return false;
